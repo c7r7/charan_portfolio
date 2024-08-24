@@ -1,0 +1,134 @@
+
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        @media (min-width: 1060px) {
+            @content;
+        }
+    }
+}
+        
+        .header {
+            background:#fff;
+            width: 100%;
+            height: 65px;
+            padding: 0 1.5rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            @include breakpoint(md) {
+                padding: 0 3rem;
+            }
+            transition: 0.3s ease all;
+        
+            &__content {
+                overflow: hidden;
+                color: #0984e3;
+                margin: 0 auto;
+                max-width: 1920px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+                z-index: 100;
+        
+                &__logo {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: #fff;
+                }
+        
+                &__nav {
+                    top: 0;
+                    right: 100%;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100vh;
+                    position: fixed;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    background: rgba(#FAF9F6, 0.8);
+                    backdrop-filter: blur(2px);
+                    transform: translate(0);
+                    transition: 0.3s ease transform;
+                   
+        
+                    @include breakpoint(md) {
+                        transform: none;
+                        flex-direction: row;
+                        background: transparent;
+                        width: auto;
+                        height: 100%;
+                        position: static;
+                    }
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 32px;
+                        @include breakpoint(md) {
+                            flex-direction: row;
+                            align-items: center;
+                            margin-bottom: 0;
+                            margin-right: 0;
+                        }
+                        li {
+                            &:not(:last-child) {
+                                margin-bottom:32px;
+                                @include breakpoint(md) {
+                                    margin-bottom: 0;
+                                    margin-right: 0;
+                                }
+                            }
+                            a {
+                                text-decoration: none;
+                                color: inherit;
+                                margin:0.75rem 1rem 0 1rem;
+                                padding-bottom:0.2rem;
+                                border-bottom: 2px solid #fff;
+                                transition: border-bottom 0.15s ease;
+        
+                                &:hover {
+                                    //color: #F05A30;
+                                    border-bottom: 2px solid #F05A30;
+                                }
+
+                                @media screen and (max-width:49em) {
+                                    border:none;
+                                }
+                            }
+                        }
+                    }
+        
+                    &.isMenu {
+                        transform: translate(100%);
+                    }
+                }
+        
+                &__toggle {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    font-size: 2rem;
+                    transition: 0.3s ease all;
+                    position: relative;
+        
+                    &:hover {
+                        color: rgb(162, 162, 246);
+                    }
+        
+                    @include breakpoint(md) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        
