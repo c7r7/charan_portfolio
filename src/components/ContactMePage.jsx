@@ -43,7 +43,7 @@ const ContactMePage = () => {
                 <a href="https://www.linkedin.com/in/charan-somalraju-72b868206/" target="_blank" rel="noreferrer" className="linkedin">
                     <LinkedInIcon />
                 </a>
-                <a href="https://rahultalatala.netlify.app/" target="_blank" rel="noreferrer" className="website">
+                <a href="https://c7r7.github.io/charan_portfolio/" target="_blank" rel="noreferrer" className="website">
                     <LanguageIcon />
                 </a>
             </div>
