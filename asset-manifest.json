@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/charan_portfolio/static/css/main.77a544ed.css",
-    "main.js": "/charan_portfolio/static/js/main.da4707a1.js",
+    "main.js": "/charan_portfolio/static/js/main.ff253ba1.js",
+    "static/media/profile.jpg": "/charan_portfolio/static/media/profile.c634c041b4392eae230c.jpg",
     "static/media/vit-logo.svg": "/charan_portfolio/static/media/vit-logo.b4de227918d166d0e984ec9719a79504.svg",
     "static/media/UB.svg": "/charan_portfolio/static/media/UB.4b6dfe9007cd67aa1e012113dd55fda2.svg",
-    "static/media/profile.jpg": "/charan_portfolio/static/media/profile.9f15304907b117391fbd.jpg",
     "static/media/mail.svg": "/charan_portfolio/static/media/mail.fc7c057b4741dd8b23d65a03ab72b4e4.svg",
     "static/media/location.svg": "/charan_portfolio/static/media/location.240db198a6afad342338956432fb2b83.svg",
     "index.html": "/charan_portfolio/index.html",
     "main.77a544ed.css.map": "/charan_portfolio/static/css/main.77a544ed.css.map",
-    "main.da4707a1.js.map": "/charan_portfolio/static/js/main.da4707a1.js.map"
+    "main.ff253ba1.js.map": "/charan_portfolio/static/js/main.ff253ba1.js.map"
   },
   "entrypoints": [
     "static/css/main.77a544ed.css",
-    "static/js/main.da4707a1.js"
+    "static/js/main.ff253ba1.js"
   ]
 }
