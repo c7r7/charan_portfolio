@@ -28,7 +28,7 @@ const LandingPage = () => {
                         <Cursor cursorStyle="|" />
                     </div>
                     <div className="download-cv">
-                        <a href="https://drive.google.com/file/d/1wRWbNFKSGhjiHFRZzigNd3SWT4slacTN/view?usp=drive_link" className="button" download="Charan Resume.pdf">
+                        <a href="https://drive.google.com/file/d/1jB9GbnB03kBiXKf1uvmRRN2REwVH_0C5/view?usp=drive_link" className="button" download="Charan Resume.pdf">
                             <FiDownload className="icon" />
                             {' '}Download CV
                         </a>
